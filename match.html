@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Match Tracker</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="About US">
+	<meta name="keywords" content="About, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+
+</head>
+<body>
+
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<header class="header-section">
+		<a href="index.html" class="site-logo">
+			<img src="img/logo.png" alt="">
+		</a>
+		<ul class="main-menu">
+
+
+			<li><a  href="attendance.html">Attendance</a></li>
+			<li><a class="active"href="match.html">Match</a></li>
+			<li><a href="lb.html">Leaderboard</a></li>
+				<li><a href="alog.html">Attendance Log</a></li>
+			<li><a href="home.html">Log Out</a></li>
+
+		</ul>
+	</header>
+	<div class="clearfix"></div>
+
+
+
+	<section class="page-top-section set-bg" data-setbg="img/header-bg/1.jpg">
+		<div class="container">
+			<h2>Match Tracke</h2>
+		</div>
+	</section>
+
+
+	<section class="about-section">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5">
+
+				</div>
+			</div>
+			<div class="about-text">
+					<h1 style="text-align:center">U-10s</h1>
+			</div>
+
+					<div class="about-text">
+						  <main role="main" class="container">
+<table  class="table table-striped table-hover" id="customer" bgcolor="white" align="center" width="400px"  style="border-collapse: collapse; text-align:justify;">
+
+	<tr>
+		<th><h2 style="text-align:right; color:green;">Team</h2></th>
+		<th><h2 style="text-align:left;color:green;">A</h2></th>
+	</tr>
+	<tr>
+		<th>Adil Sanjeev</th>
+			<th><form >
+
+    <button onclick="gincrement()" id="goal" type="button" name="goal"> <img src="img/goal.png" alt="goal"> </button>
+		<input type="number" id="ngoal" style="width:40px" name="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+		<button  onclick="aincrement()" id="assist" type="button" name="assist"> <img src="img/assist.png" alt="assist"> </button>
+		<input type="number" id="nassist" style="width:40px" name="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+		<button  onclick="sincrement()"id="save"  type="button" name="save"> <img src="img/save.png" alt="save/block"> </button>
+		<input type="number" id="nsave"style="width:40px" name="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+		<button  onclick="yincrement()" id="yellow" type="button" name="yellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+		<input type="number" id="nyellow" style="width:40px" name="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+		<button  onclick="rincrement()" id="r" type="button" name="red"> <img src="img/rc.png" alt="red card"> </button>
+		<input type="number" id="nr" style="width:40px" name="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</form></th>
+		</tr>
+
+		<tr>
+			<th>Benny Matthew</th>
+				<th><form >
+
+	    <button onclick="gbmincrement()" id="bmgoal" type="button" name="bmgoal"> <img src="img/goal.png" alt="goal"> </button>
+			<input type="number" id="bmngoal" style="width:40px" name="bm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<button  onclick="abmincrement()" id="bmassist" type="button" name="bmassist"> <img src="img/assist.png" alt="assist"> </button>
+			<input type="number" id="bmnassist" style="width:40px" name="bm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<button  onclick="sbmincrement()"id="bmsave"  type="button" name="bmsave"> <img src="img/save.png" alt="save/block"> </button>
+			<input type="number" id="bmnsave"style="width:40px" name="bm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<button  onclick="ybmincrement()" id="bmyellow" type="button" name="bmyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+			<input type="number" id="bmnyellow" style="width:40px" name="bm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<button  onclick="rbmincrement()" id="bmr" type="button" name="bmred"> <img src="img/rc.png" alt="red card"> </button>
+			<input type="number" id="bmnr" style="width:40px" name="bm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Dinesh Rajan</th>
+				<th><form >
+
+				<button onclick="gdrincrement()" id="drgoal" type="button" name="drgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="drngoal" style="width:40px" name="dr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="adrincrement()" id="drassist" type="button" name="drassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="drnassist" style="width:40px" name="dr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="sdrincrement()"id="drsave"  type="button" name="drsave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="drnsave"style="width:40px" name="dr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ydrincrement()" id="dryellow" type="button" name="dryellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="drnyellow" style="width:40px" name="dr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rdrincrement()" id="drr" type="button" name="drred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="drnr" style="width:40px" name="dr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Ganesh Karthikeyan</th>
+				<th><form >
+
+				<button onclick="ggkincrement()" id="gkgoal" type="button" name="gkgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="gkngoal" style="width:40px" name="gk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="agkincrement()" id="gkassist" type="button" name="gkassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="gknassist" style="width:40px" name="gk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="sgkincrement()"id="gksave"  type="button" name="gksave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="gknsave"style="width:40px" name="gk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ygkincrement()" id="gkyellow" type="button" name="gkyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="gknyellow" style="width:40px" name="gk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rgkincrement()" id="gkr" type="button" name="gkred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="gknr" style="width:40px" name="gk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Matthew Koshy</th>
+				<th><form >
+
+				<button onclick="gmkincrement()" id="mkgoal" type="button" name="mkgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="mkngoal" style="width:40px" name="mk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="amkincrement()" id="mkassist" type="button" name="mkassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="mknassist" style="width:40px" name="mk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="smkincrement()"id="mksave"  type="button" name="mksave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="mknsave"style="width:40px" name="mk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ymkincrement()" id="mkyellow" type="button" name="mkyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="mknyellow" style="width:40px" name="mk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rmkincrement()" id="mkr" type="button" name="mkred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="mknr" style="width:40px" name="mk">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Nivin Lal</th>
+				<th><form >
+
+				<button onclick="gnlincrement()" id="nlgoal" type="button" name="nlgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="nlngoal" style="width:40px" name="nl">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="anlincrement()" id="nlassist" type="button" name="nlassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="nlnassist" style="width:40px" name="nl">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="snlincrement()"id="nlsave"  type="button" name="nlsave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="nlnsave"style="width:40px" name="nl">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ynlincrement()" id="nlyellow" type="button" name="nlyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="nlnyellow" style="width:40px" name="nl">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rnlincrement()" id="nlr" type="button" name="nlred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="nlnr" style="width:40px" name="nl">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th><h2 style="text-align:right;color:green;">Team</h2></th>
+			<th><h2 style="text-align:left;color:green;">B</h2></th>
+		</tr>
+
+		<tr>
+			<th>Prakashan Nair</th>
+				<th><form >
+
+				<button onclick="gpnincrement()" id="pngoal" type="button" name="pngoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="pnngoal" style="width:40px" name="pn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="apnincrement()" id="pnassist" type="button" name="pnassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="pnnassist" style="width:40px" name="pn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="spnincrement()"id="pnsave"  type="button" name="pnsave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="pnnsave"style="width:40px" name="pn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ypnincrement()" id="pnyellow" type="button" name="pnyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="pnnyellow" style="width:40px" name="pn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rpnincrement()" id="pnr" type="button" name="pnred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="pnnr" style="width:40px" name="pn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Rahul Noel</th>
+				<th><form >
+
+				<button onclick="grnincrement()" id="rngoal" type="button" name="rngoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="rnngoal" style="width:40px" name="rn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="arnincrement()" id="rnassist" type="button" name="rnassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="rnnassist" style="width:40px" name="rn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="srnincrement()"id="rnsave"  type="button" name="rnsave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="rnnsave"style="width:40px" name="rn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="yrnincrement()" id="rnyellow" type="button" name="rnyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="rnnyellow" style="width:40px" name="rn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rrnincrement()" id="rnr" type="button" name="rnred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="rnnr" style="width:40px" name="rn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Sahal Syed</th>
+				<th><form >
+
+				<button onclick="gssincrement()" id="ssgoal" type="button" name="ssgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="ssngoal" style="width:40px" name="ss">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="assincrement()" id="ssassist" type="button" name="ssassist"> <img src="img/assist.png" alt="assist"> </button>
+				<input type="number" id="ssnassist" style="width:40px" name="ss">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="sssincrement()"id="sssave"  type="button" name="sssave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="ssnsave"style="width:40px" name="ss">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="yssincrement()" id="ssyellow" type="button" name="ssyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="ssnyellow" style="width:40px" name="ss">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rssincrement()" id="ssr" type="button" name="ssred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="ssnr" style="width:40px" name="ss">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Tharan Abraham</th>
+				<th><form >
+
+				<button onclick="gtaincrement()" id="tagoal" type="button" name="tagoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="tangoal" style="width:40px" name="ta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ataincrement()" id="taassist" type="button" name="taassist"> <img src="img/assist.png" alt="ataist"> </button>
+				<input type="number" id="tanataist" style="width:40px" name="ta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="staincrement()"id="tasave"  type="button" name="tasave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="tansave"style="width:40px" name="ta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="ytaincrement()" id="tayellow" type="button" name="tayellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="tanyellow" style="width:40px" name="ta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rtaincrement()" id="tar" type="button" name="tared"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="tanr" style="width:40px" name="ta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Unni Narayanan</th>
+				<th><form >
+
+				<button onclick="gunincrement()" id="ungoal" type="button" name="ungoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="unngoal" style="width:40px" name="un">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="aunincrement()" id="unaunist" type="button" name="unaunist"> <img src="img/assist.png" alt="aunist"> </button>
+				<input type="number" id="unnaunist" style="width:40px" name="un">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="unsincrement()"id="unsave"  type="button" name="unsave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="unnsave"style="width:40px" name="un">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="yunincrement()" id="unyellow" type="button" name="unyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="unnyellow" style="width:40px" name="un">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="runincrement()" id="unr" type="button" name="unred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="unnr" style="width:40px" name="un">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+		</tr>
+
+		<tr>
+			<th>Vignesh Sabu</th>
+				<th><form >
+
+				<button onclick="gvsincrement()" id="vsgoal" type="button" name="vsgoal"> <img src="img/goal.png" alt="goal"> </button>
+				<input type="number" id="vsngoal" style="width:40px" name="vs">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="avsincrement()" id="vsavsist" type="button" name="vsavsist"> <img src="img/assist.png" alt="avsist"> </button>
+				<input type="number" id="vsnavsist" style="width:40px" name="vs">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="vssincrement()"id="vssave"  type="button" name="vssave"> <img src="img/save.png" alt="save/block"> </button>
+				<input type="number" id="vsnsave"style="width:40px" name="vs">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="yvsincrement()" id="vsyellow" type="button" name="vsyellow"> <img src="img/yellow.png" alt="yellow card"> </button>
+				<input type="number" id="vsnyellow" style="width:40px" name="vs">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<button  onclick="rvsincrement()" id="vsr" type="button" name="vsred"> <img src="img/rc.png" alt="red card"> </button>
+				<input type="number" id="vsnr" style="width:40px" name="vs">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form></th>
+			</tr>
+
+
+	 </table>
+  </main><!-- /.container -->
+	 	</div>
+
+		</div>
+	</section>
+
+	<section class="about-section">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5">
+
+				</div>
+			</div>
+
+					<div class="about-text">
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<h4>Location</h4>
+						<div class="fw-info-box">
+							<img src="img/icons/1.png" alt="">
+							<div class="fw-info-text">
+								<p>Edachira , Kochi , Kerala - 682030</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<h4>Contact Us</h4>
+						<div class="fw-info-box">
+							<img src="img/icons/2.png" alt="">
+							<div class="fw-info-text">
+								<p>+91 8547879538</p>
+								<p>+91 9408349645</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<h4>E-mail</h4>
+						<div class="fw-info-box">
+							<img src="img/icons/3.png" alt="">
+							<div class="fw-info-text">
+								<p>support@spark.com</p>
+								<p>spark@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<h4>Social Media</h4>
+						<div class="fw-info-box">
+							<img src="img/icons/4.png" alt="">
+							<div class="social-links">
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</footer>
+	<!-- Footer section end -->
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$('tbody').sortable();
+
+	</script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+<script type="text/javascript">
+function gincrement() {
+document.getElementById("ngoal").stepUp(1);
+}
+function aincrement() {
+document.getElementById("nassist").stepUp(1);
+}
+function rincrement() {
+document.getElementById("nr").stepUp(1);
+var ybt = document.getElementById('nyellow');
+var rbt = document.getElementById('nr');
+var bty = document.getElementById('yellow');
+var btr = document.getElementById('r');
+var gbt = document.getElementById('goal');
+var abt = document.getElementById('assist');
+var sbt = document.getElementById('save');
+var bts = document.getElementById('nsave');
+var bta = document.getElementById('nassist');
+var btg = document.getElementById('ngoal');
+if (nr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function yincrement() {
+document.getElementById("nyellow").stepUp(1);
+var ybt = document.getElementById('nyellow');
+var rbt = document.getElementById('nr');
+var bty = document.getElementById('yellow');
+var btr = document.getElementById('r');
+var gbt = document.getElementById('goal');
+var abt = document.getElementById('assist');
+var sbt = document.getElementById('save');
+var bts = document.getElementById('nsave');
+var bta = document.getElementById('nassist');
+var btg = document.getElementById('ngoal');
+if (nyellow.value=='2')
+{
+	nr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function sincrement() {
+document.getElementById("nsave").stepUp(1);
+}
+
+function gbmincrement() {
+document.getElementById("bmngoal").stepUp(1);
+}
+function abmincrement() {
+document.getElementById("bmnassist").stepUp(1);
+}
+function rbmincrement() {
+document.getElementById("bmnr").stepUp(1);
+var ybt = document.getElementById('bmnyellow');
+var rbt = document.getElementById('bmnr');
+var bty = document.getElementById('bmyellow');
+var btr = document.getElementById('bmr');
+var gbt = document.getElementById('bmgoal');
+var abt = document.getElementById('bmassist');
+var sbt = document.getElementById('bmsave');
+var bts = document.getElementById('bmnsave');
+var bta = document.getElementById('bmnassist');
+var btg = document.getElementById('bmngoal');
+if (bmnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ybmincrement() {
+document.getElementById("bmnyellow").stepUp(1);
+var ybt = document.getElementById('bmnyellow');
+var rbt = document.getElementById('bmnr');
+var bty = document.getElementById('bmyellow');
+var btr = document.getElementById('bmr');
+var gbt = document.getElementById('bmgoal');
+var abt = document.getElementById('bmassist');
+var sbt = document.getElementById('bmsave');
+var bts = document.getElementById('bmnsave');
+var bta = document.getElementById('bmnassist');
+var btg = document.getElementById('bmngoal');
+if (bmnyellow.value=='2')
+{
+	bmnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function sbmincrement() {
+document.getElementById("bmnsave").stepUp(1);
+}
+
+
+function gdrincrement() {
+document.getElementById("drngoal").stepUp(1);
+}
+function adrincrement() {
+document.getElementById("drnassist").stepUp(1);
+}
+function rdrincrement() {
+document.getElementById("drnr").stepUp(1);
+var ybt = document.getElementById('drnyellow');
+var rbt = document.getElementById('drnr');
+var bty = document.getElementById('dryellow');
+var btr = document.getElementById('drr');
+var gbt = document.getElementById('drgoal');
+var abt = document.getElementById('drassist');
+var sbt = document.getElementById('drsave');
+var bts = document.getElementById('drnsave');
+var bta = document.getElementById('drnassist');
+var btg = document.getElementById('drngoal');
+if (drnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ydrincrement() {
+document.getElementById("drnyellow").stepUp(1);
+var ybt = document.getElementById('drnyellow');
+var rbt = document.getElementById('drnr');
+var bty = document.getElementById('dryellow');
+var btr = document.getElementById('drr');
+var gbt = document.getElementById('drgoal');
+var abt = document.getElementById('drassist');
+var sbt = document.getElementById('drsave');
+var bts = document.getElementById('drnsave');
+var bta = document.getElementById('drnassist');
+var btg = document.getElementById('drngoal');
+if (drnyellow.value=='2')
+{
+	drnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function sdrincrement() {
+document.getElementById("drnsave").stepUp(1);
+}
+
+function ggkincrement() {
+document.getElementById("gkngoal").stepUp(1);
+}
+function agkincrement() {
+document.getElementById("gknassist").stepUp(1);
+}
+function rgkincrement() {
+document.getElementById("gknr").stepUp(1);
+var ybt = document.getElementById('gknyellow');
+var rbt = document.getElementById('gknr');
+var bty = document.getElementById('gkyellow');
+var btr = document.getElementById('gkr');
+var gbt = document.getElementById('gkgoal');
+var abt = document.getElementById('gkassist');
+var sbt = document.getElementById('gksave');
+var bts = document.getElementById('gknsave');
+var bta = document.getElementById('gknassist');
+var btg = document.getElementById('gkngoal');
+if (gknr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ygkincrement() {
+document.getElementById("gknyellow").stepUp(1);
+var ybt = document.getElementById('gknyellow');
+var rbt = document.getElementById('gknr');
+var bty = document.getElementById('gkyellow');
+var btr = document.getElementById('gkr');
+var gbt = document.getElementById('gkgoal');
+var abt = document.getElementById('gkassist');
+var sbt = document.getElementById('gksave');
+var bts = document.getElementById('gknsave');
+var bta = document.getElementById('gknassist');
+var btg = document.getElementById('gkngoal');
+if (gknyellow.value=='2')
+{
+	gknr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function sgkincrement() {
+document.getElementById("gknsave").stepUp(1);
+}
+
+function gmkincrement() {
+document.getElementById("mkngoal").stepUp(1);
+}
+function amkincrement() {
+document.getElementById("mknassist").stepUp(1);
+}
+function rmkincrement() {
+document.getElementById("mknr").stepUp(1);
+var ybt = document.getElementById('mknyellow');
+var rbt = document.getElementById('mknr');
+var bty = document.getElementById('mkyellow');
+var btr = document.getElementById('mkr');
+var gbt = document.getElementById('mkgoal');
+var abt = document.getElementById('mkassist');
+var sbt = document.getElementById('mksave');
+var bts = document.getElementById('mknsave');
+var bta = document.getElementById('mknassist');
+var btg = document.getElementById('mkngoal');
+if (mknr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ymkincrement() {
+document.getElementById("mknyellow").stepUp(1);
+var ybt = document.getElementById('mknyellow');
+var rbt = document.getElementById('mknr');
+var bty = document.getElementById('mkyellow');
+var btr = document.getElementById('mkr');
+var gbt = document.getElementById('mkgoal');
+var abt = document.getElementById('mkassist');
+var sbt = document.getElementById('mksave');
+var bts = document.getElementById('mknsave');
+var bta = document.getElementById('mknassist');
+var btg = document.getElementById('mkngoal');
+if (mknyellow.value=='2')
+{
+	mknr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function smkincrement() {
+document.getElementById("mknsave").stepUp(1);
+}
+
+function gnlincrement() {
+document.getElementById("nlngoal").stepUp(1);
+}
+function anlincrement() {
+document.getElementById("nlnassist").stepUp(1);
+}
+function rnlincrement() {
+document.getElementById("nlnr").stepUp(1);
+var ybt = document.getElementById('nlnyellow');
+var rbt = document.getElementById('nlnr');
+var bty = document.getElementById('nlyellow');
+var btr = document.getElementById('nlr');
+var gbt = document.getElementById('nlgoal');
+var abt = document.getElementById('nlassist');
+var sbt = document.getElementById('nlsave');
+var bts = document.getElementById('nlnsave');
+var bta = document.getElementById('nlnassist');
+var btg = document.getElementById('nlngoal');
+if (nlnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ynlincrement() {
+document.getElementById("nlnyellow").stepUp(1);
+var ybt = document.getElementById('nlnyellow');
+var rbt = document.getElementById('nlnr');
+var bty = document.getElementById('nlyellow');
+var btr = document.getElementById('nlr');
+var gbt = document.getElementById('nlgoal');
+var abt = document.getElementById('nlassist');
+var sbt = document.getElementById('nlsave');
+var bts = document.getElementById('nlnsave');
+var bta = document.getElementById('nlnassist');
+var btg = document.getElementById('nlngoal');
+if (nlnyellow.value=='2')
+{
+	nlnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function snlincrement() {
+document.getElementById("nlnsave").stepUp(1);
+}
+function gpnincrement() {
+document.getElementById("pnngoal").stepUp(1);
+}
+function apnincrement() {
+document.getElementById("pnnassist").stepUp(1);
+}
+function rpnincrement() {
+document.getElementById("pnnr").stepUp(1);
+var ybt = document.getElementById('pnnyellow');
+var rbt = document.getElementById('pnnr');
+var bty = document.getElementById('pnyellow');
+var btr = document.getElementById('pnr');
+var gbt = document.getElementById('pngoal');
+var abt = document.getElementById('pnassist');
+var sbt = document.getElementById('pnsave');
+var bts = document.getElementById('pnnsave');
+var bta = document.getElementById('pnnassist');
+var btg = document.getElementById('pnngoal');
+if (pnnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ypnincrement() {
+document.getElementById("pnnyellow").stepUp(1);
+var ybt = document.getElementById('pnnyellow');
+var rbt = document.getElementById('pnnr');
+var bty = document.getElementById('pnyellow');
+var btr = document.getElementById('pnr');
+var gbt = document.getElementById('pngoal');
+var abt = document.getElementById('pnassist');
+var sbt = document.getElementById('pnsave');
+var bts = document.getElementById('pnnsave');
+var bta = document.getElementById('pnnassist');
+var btg = document.getElementById('pnngoal');
+if (pnnyellow.value=='2')
+{
+	pnnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function spnincrement() {
+document.getElementById("pnnsave").stepUp(1);
+}
+
+function grnincrement() {
+document.getElementById("rnngoal").stepUp(1);
+}
+function arnincrement() {
+document.getElementById("rnnassist").stepUp(1);
+}
+function rrnincrement() {
+document.getElementById("rnnr").stepUp(1);
+var ybt = document.getElementById('rnnyellow');
+var rbt = document.getElementById('rnnr');
+var bty = document.getElementById('rnyellow');
+var btr = document.getElementById('rnr');
+var gbt = document.getElementById('rngoal');
+var abt = document.getElementById('rnassist');
+var sbt = document.getElementById('rnsave');
+var bts = document.getElementById('rnnsave');
+var bta = document.getElementById('rnnassist');
+var btg = document.getElementById('rnngoal');
+if (rnnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function yrnincrement() {
+document.getElementById("rnnyellow").stepUp(1);
+var ybt = document.getElementById('rnnyellow');
+var rbt = document.getElementById('rnnr');
+var bty = document.getElementById('rnyellow');
+var btr = document.getElementById('rnr');
+var gbt = document.getElementById('rngoal');
+var abt = document.getElementById('rnassist');
+var sbt = document.getElementById('rnsave');
+var bts = document.getElementById('rnnsave');
+var bta = document.getElementById('rnnassist');
+var btg = document.getElementById('rnngoal');
+if (rnnyellow.value=='2')
+{
+	rnnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function srnincrement() {
+document.getElementById("rnnsave").stepUp(1);
+}
+
+function gssincrement() {
+document.getElementById("ssngoal").stepUp(1);
+}
+function assincrement() {
+document.getElementById("ssnassist").stepUp(1);
+}
+function rssincrement() {
+document.getElementById("ssnr").stepUp(1);
+var ybt = document.getElementById('ssnyellow');
+var rbt = document.getElementById('ssnr');
+var bty = document.getElementById('ssyellow');
+var btr = document.getElementById('ssr');
+var gbt = document.getElementById('ssgoal');
+var abt = document.getElementById('ssassist');
+var sbt = document.getElementById('sssave');
+var bts = document.getElementById('ssnsave');
+var bta = document.getElementById('ssnassist');
+var btg = document.getElementById('ssngoal');
+if (ssnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function yssincrement() {
+document.getElementById("ssnyellow").stepUp(1);
+var ybt = document.getElementById('ssnyellow');
+var rbt = document.getElementById('ssnr');
+var bty = document.getElementById('ssyellow');
+var btr = document.getElementById('ssr');
+var gbt = document.getElementById('ssgoal');
+var abt = document.getElementById('ssassist');
+var sbt = document.getElementById('sssave');
+var bts = document.getElementById('ssnsave');
+var bta = document.getElementById('ssnassist');
+var btg = document.getElementById('ssngoal');
+if (ssnyellow.value=='2')
+{
+	ssnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function sssincrement() {
+document.getElementById("ssnsave").stepUp(1);
+}
+
+function gtaincrement() {
+document.getElementById("tangoal").stepUp(1);
+}
+function ataincrement() {
+document.getElementById("tanataist").stepUp(1);
+}
+function rtaincrement() {
+document.getElementById("tanr").stepUp(1);
+var ybt = document.getElementById('tanyellow');
+var rbt = document.getElementById('tanr');
+var bty = document.getElementById('tayellow');
+var btr = document.getElementById('tar');
+var gbt = document.getElementById('tagoal');
+var abt = document.getElementById('taataist');
+var sbt = document.getElementById('tasave');
+var bts = document.getElementById('tansave');
+var bta = document.getElementById('tanataist');
+var btg = document.getElementById('tangoal');
+if (tanr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bta.disabled = true;
+btg.disabled = true;
+}
+function ytaincrement() {
+document.getElementById("tanyellow").stepUp(1);
+var ybt = document.getElementById('tanyellow');
+var rbt = document.getElementById('tanr');
+var bty = document.getElementById('tayellow');
+var btr = document.getElementById('tar');
+var gbt = document.getElementById('tagoal');
+var abt = document.getElementById('taataist');
+var sbt = document.getElementById('tasave');
+var bts = document.getElementById('tansave');
+var bta = document.getElementById('tanataist');
+var btg = document.getElementById('tangoal');
+if (tanyellow.value=='2')
+{
+	tanr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bta.disabled = true;
+	btg.disabled = true;
+}
+}
+function staincrement() {
+document.getElementById("tansave").stepUp(1);
+}
+
+function gunincrement() {
+document.getElementById("unngoal").stepUp(1);
+}
+function aunincrement() {
+document.getElementById("unnaunist").stepUp(1);
+}
+function runincrement() {
+document.getElementById("unnr").stepUp(1);
+var ybt = document.getElementById('unnyellow');
+var rbt = document.getElementById('unnr');
+var bty = document.getElementById('unyellow');
+var btr = document.getElementById('unr');
+var gbt = document.getElementById('ungoal');
+var abt = document.getElementById('unaunist');
+var sbt = document.getElementById('unsave');
+var bts = document.getElementById('unnsave');
+var bun = document.getElementById('unnaunist');
+var btg = document.getElementById('unngoal');
+if (unnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bun.disabled = true;
+btg.disabled = true;
+}
+function yunincrement() {
+document.getElementById("unnyellow").stepUp(1);
+var ybt = document.getElementById('unnyellow');
+var rbt = document.getElementById('unnr');
+var bty = document.getElementById('unyellow');
+var btr = document.getElementById('unr');
+var gbt = document.getElementById('ungoal');
+var abt = document.getElementById('unaunist');
+var sbt = document.getElementById('unsave');
+var bts = document.getElementById('unnsave');
+var bun = document.getElementById('unnaunist');
+var btg = document.getElementById('unngoal');
+if (unnyellow.value=='2')
+{
+	unnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bun.disabled = true;
+	btg.disabled = true;
+}
+}
+function unsincrement() {
+document.getElementById("unnsave").stepUp(1);
+}
+
+function gvsincrement() {
+document.getElementById("vsngoal").stepUp(1);
+}
+function avsincrement() {
+document.getElementById("vsnavsist").stepUp(1);
+}
+function rvsincrement() {
+document.getElementById("vsnr").stepUp(1);
+var ybt = document.getElementById('vsnyellow');
+var rbt = document.getElementById('vsnr');
+var bty = document.getElementById('vsyellow');
+var btr = document.getElementById('vsr');
+var gbt = document.getElementById('vsgoal');
+var abt = document.getElementById('vsavsist');
+var sbt = document.getElementById('vssave');
+var bts = document.getElementById('vsnsave');
+var bvs = document.getElementById('vsnavsist');
+var btg = document.getElementById('vsngoal');
+if (vsnr.value=='1')
+ybt.disabled = true;
+bty.disabled = true;
+rbt.disabled = true;
+btr.disabled = true;
+gbt.disabled = true;
+abt.disabled = true;
+sbt.disabled = true;
+bts.disabled = true;
+bvs.disabled = true;
+btg.disabled = true;
+}
+function yvsincrement() {
+document.getElementById("vsnyellow").stepUp(1);
+var ybt = document.getElementById('vsnyellow');
+var rbt = document.getElementById('vsnr');
+var bty = document.getElementById('vsyellow');
+var btr = document.getElementById('vsr');
+var gbt = document.getElementById('vsgoal');
+var abt = document.getElementById('vsavsist');
+var sbt = document.getElementById('vssave');
+var bts = document.getElementById('vsnsave');
+var bvs = document.getElementById('vsnavsist');
+var btg = document.getElementById('vsngoal');
+if (vsnyellow.value=='2')
+{
+	vsnr.value=1;
+	ybt.disabled = true;
+	bty.disabled = true;
+	rbt.disabled = true;
+	btr.disabled = true;
+	gbt.disabled = true;
+	abt.disabled = true;
+	sbt.disabled = true;
+	bts.disabled = true;
+	bvs.disabled = true;
+	btg.disabled = true;
+}
+}
+function vssincrement() {
+document.getElementById("vsnsave").stepUp(1);
+}
+</script>
+	</body>
+</html>
